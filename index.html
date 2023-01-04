@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/anime.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+
+    <title>Slutprojekt Javascript 1</title>
+</head>
+
+<body>
+
+    <header>Welcome to this Image Search Engine! </header>
+    <!-- form med alla inputs -->
+        <form action="">
+            <!-- input för text som användaren skriver -->
+            <label for="textInput">Search Photos</label>
+            <input type="text" id="textInput" placeholder="Photos, people & groups">
+            <br>
+            <!-- input för antalet bilder som användaren knappar in -->
+            <label for="numberInput">How many pictures do you want to search for?</label>
+            <input type="number" name="" id="numberInput" placeholder="Amount of photos">
+            <br>
+            <!-- radio-buttons för användarens val av storlek -->
+            <label for="size">Minimum size:</label>
+            <label for="sizeInputS">S</label>
+            <input type="radio" id="sizeInputS" name="size" value="n">
+            <label for="sizeInputM">M</label>
+            <input type="radio" id="sizeInputM" name="size" value="c">
+            <label for="sizeInputL">L</label>
+            <input type="radio" id="sizeInputL" name="size" value="b">
+            <br>
+            <!-- drop-downmenyn för användarens val av hur bilderna ska sorteras -->
+            <label for="sortInput">Sort by:</label>
+            <select name="sort" id="sortInput">
+                <option value="interestingness-desc">Interestingness</option>
+                <option value="date-posted-desc">Date posted</option>
+                <option value="relevance">Relevance</option>
+            </select>
+            <br>
+            <!-- sök-knappen -->
+            <button class="btn" id="inputButton">Search!</button>
+        </form>
+
+   
+    <div class="buttons-container">
+        <button class="btn" id="prev" >Prev</button>
+        <button class="btn" id="next" >Next</button>
+    </div>
+  
+
+    <div id="divAnimation">
+        <img id="imgWaitingAnimation" src="" alt="">
+    </div>
+
+    <div class="carousel">
+        <div class="image-container" id="imgContainer"></div>
+    </div>
+
+</body>
+
+</html>
